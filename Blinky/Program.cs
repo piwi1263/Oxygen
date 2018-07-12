@@ -25,7 +25,7 @@ namespace Blinky
                 for (; ; )
                 {
                     _led.Write(_led.Read() == GpioPinValue.Low ? GpioPinValue.High : GpioPinValue.Low);
-                    Thread.Sleep(250);
+                    Thread.Sleep(100);
                 }
             }
             catch (Exception ex)
@@ -36,7 +36,7 @@ namespace Blinky
                 for (; ; )
                 {
                     _led.Write(_led.Read() == GpioPinValue.Low ? GpioPinValue.High : GpioPinValue.Low);
-                    Thread.Sleep(250);
+                    Thread.Sleep(100);
                 }
             }
         }
